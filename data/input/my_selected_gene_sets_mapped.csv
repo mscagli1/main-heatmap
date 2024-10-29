@@ -1,0 +1,65 @@
+,database,my_name,id
+1,go.mf,DNA-binding transcription factor activity,GO:0003700
+2,go.mf,amino acid transmembrane transporter activity,GO:0015171
+3,go.mf,aminoacyl-tRNA ligase activity,GO:0004812
+4,go.mf,L-amino acid transmembrane transporter activity,GO:0015179
+5,go.mf,neutral amino acid transmembrane transporter activity,GO:0015175
+6,go.bp,cell cycle,GO:0007049
+7,go.bp,regulation of cell cycle,GO:0051726
+8,go.bp,L-serine metabolic process,GO:0006563
+9,go.bp,amino acid metabolic process,GO:0006520
+10,go.bp,tetrahydrofolate metabolic process,GO:0046653
+11,go.bp,cellular response to amino acid starvation,GO:0034198
+12,go.bp,tRNA aminoacylation,GO:0043039
+13,go.bp,T cell activation involved in immune response,GO:0002286
+14,go.bp,cellular response to type I interferon,GO:0071357
+15,go.bp,cellular response to type II interferon,GO:0071346
+16,go.bp,sterol biosynthetic process,GO:0016126
+17,go.bp,oxidative phosphorylation,GO:0006119
+18,go.cc,mitochondrial small ribosomal subunit,GO:0005763
+19,go.cc,respirasome,GO:0070469
+20,go.cc,cytosolic ribosome,GO:0022626
+21,go.cc,mitochondrial large ribosomal subunit,GO:0005762
+22,kegg,Fatty acid metabolism,mmu01212
+23,kegg,Cell cycle,mmu04110
+24,kegg,Steroid biosynthesis,mmu00100
+25,kegg,Biosynthesis of amino acids,mmu01230
+26,kegg,mTOR signaling pathway,mmu04150
+27,kegg,Arginine biosynthesis,mmu00220
+28,kegg,Cysteine and methionine metabolism,mmu00270
+29,kegg,"Glycine, serine, and threonine metabolism",mmu00260
+30,kegg,One carbon pool by folate,mmu00670
+31,kegg,Aminoacyl-tRNA biosynthesis,mmu00970
+32,kegg,"Alanine, aspartate and glutamate metabolism",mmu00250
+33,kegg,Arginine and proline metabolism,mmu00330
+34,kegg,Glutathione metabolism,mmu00480
+35,kegg,Tyrosine metabolism,mmu00350
+36,kegg,Oxidative phosphorylation,mmu00190
+37,kegg,"Valine, leucine and isoleucine degradation",mmu00280
+38,kegg,Citrate cycle (TCA cycle),mmu00020
+39,kegg,Autophagy - animal,mmu04140
+40,kegg,Ribosome,mmu03010
+41,kegg,Fatty acid biosynthesis,mmu00061
+42,kegg,Central carbon metabolism in cancer,mmu05230
+43,kegg,Pyruvate metabolism,mmu00620
+44,kegg,MAPK signaling pathway,mmu04010
+45,kegg,Wnt signaling pathway,mmu04310
+46,kegg,TGF-beta signaling pathway,mmu04350
+47,kegg,JAK-STAT signaling pathway,mmu04630
+48,kegg,NF-kappa B signaling pathway,mmu04064
+49,kegg,TNF signaling pathway,mmu04668
+50,kegg,HIF-1 signaling pathway,mmu04066
+51,kegg,FoxO signaling pathway,mmu04068
+52,kegg,PI3K-Akt signaling pathway,mmu04151
+53,kegg,p53 signaling pathway,mmu04115
+54,kegg,Cellular senescence,mmu04218
+55,kegg,Glycolysis and Gluconeogenesis,mmu00010
+56,kegg,Pentose phosphate pathway,mmu00030
+57,reactome,Cell Cycle,R-MMU-1640170
+58,reactome,Serine biosynthesis,R-MMU-977347
+59,reactome,Amino acid transport across the plasma membrane,R-MMU-352230
+60,wp,Fatty acid biosythesis,WP336
+61,wp,Cholesterol biosynthesis,WP103
+62,wp,Glycolysis and gluconeogenesis,WP157
+63,wp,One carbon metabolism,WP435
+64,wp,Oxidative stress and redox pathway,WP4466

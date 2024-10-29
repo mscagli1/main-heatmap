@@ -1,0 +1,40 @@
+---
+title: "2024-10-09_main-heatmap_clusters"
+format:
+  html:
+    embed-resources: true
+editor: visual
+---
+
+## Cluster Plots![](images/clipboard-1227717430.png)
+
+```{r}
+#| echo: true
+#| output: false
+
+# Load packages and data
+here::i_am("output/reports/2024-10-09_main-heatmap_clusters.qmd")
+library(here)
+library(gprofiler2)
+
+heatmap
+gost_plots <- readRDS(here("output", "objects", "s03_gost_plots.rds"))
+main_heatmap <- readRDS(here("output", "objects", "s03_main_heatmap.rds"))
+clust_genes <- readRDS(here("output", "objects", "s03_clust_genes.rds"))
+
+```
+
+```{r}
+#| fig-width: 5
+#| fig-height: 8
+main_heatmap
+```
+
+```{r}
+htmltools::tagList(gost_plots)
+
+```
+
+```{r}
+print(clust_genes)
+```

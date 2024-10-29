@@ -1,0 +1,94 @@
+---
+title: "2024-10-22_ko-heatmap-clusters"
+format:
+  html:
+    embed-resources: true
+editor: visual
+title-block-banner: true
+fig-cap-location: top
+---
+
+## ATF4 / CEBPG KO heatmaps, cluster-specific gOST Plots, and gene lists
+
+### Version 1 and 2: Filter for DEGS in 1) **(DMSO vs Halo) and/or (KO vs Rosa) conditions** or 2) **(KO vs Rosa) conditions only**, then cluster the data by (KO vs Rosa) conditions only
+
+```{r}
+#| echo: false
+#| output: false
+
+# Load packages and data
+here::i_am("output/reports/2024-10-22_ko-heatmap-clusters.qmd")
+library(here)
+library(gprofiler2)
+
+ko_only_heatmap <- readRDS(here("output", "objects", "s05_ko_only_heatmap.rds"))
+ko_halo_heatmap <- readRDS(here("output", "objects", "s05_ko_halo_heatmap.rds"))
+ko_halo2_heatmap <- readRDS(here("output", "objects", "s05_ko_halo2_heatmap.rds"))
+
+gostplots_ko_halo <- readRDS(here("output", "objects", "s05_ko_halo_gostplots.rds"))
+gostplots_ko_only <- readRDS(here("output", "objects", "s05_ko_only_gostplots.rds"))
+gostplots_ko_halo2 <- readRDS(here("output", "objects", "s05_ko_halo2_gostplots.rds"))
+
+clust_genes_ko_halo <- readRDS(here("output", "objects", "s05_ko_halo_gostplots_clust_genes.rds"))
+clust_genes_ko_only <- readRDS(here("output", "objects", "s05_ko_only_gostplots_clust_genes.rds"))
+clust_genes_ko_halo2 <- readRDS(here("output", "objects", "s05_ko_halo2_gostplots_clust_genes.rds"))
+
+
+```
+
+##### Heatmaps
+
+```{r}
+#| layout-ncol: 2
+#| fig-width: 5
+#| fig-height: 10
+#| fig-cap:
+#|   - "DEGs from (Halo vs DMSO) or (KO vs Rosa) conditions"
+#|   - "Only DEGs from (KO vs Rosa) conditions"
+ko_halo_heatmap
+ko_only_heatmap
+
+```
+
+##### gOST plots
+
+```{r}
+#| layout-ncol: 2
+
+htmltools::tagList(gostplots_ko_halo)
+
+htmltools::tagList(gostplots_ko_only)
+
+```
+
+##### Gene lists
+
+```{r}
+#| layout-ncol: 2
+print(clust_genes_ko_halo)
+print(clust_genes_ko_only)
+```
+
+
+### Version 3: Filter for DEGS in **(DMSO vs Halo) and/or (KO vs Rosa) conditions** then cluster the data by all conditions, including the effect of Halo vs. DMSO
+
+##### Heatmaps
+
+```{r}
+#| fig-width: 5
+#| fig-height: 10
+ko_halo2_heatmap
+```
+
+
+##### gOST plots
+
+```{r}
+htmltools::tagList(gostplots_ko_halo2)
+```
+
+##### Gene lists
+
+```{r}
+print(clust_genes_ko_halo2)
+```
